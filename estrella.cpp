@@ -18,7 +18,7 @@ int main(int argc, char **argv){
 	ros::init(argc, argv, "mover");
 	ros::NodeHandle n;
 	vel_pub = n.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 10);
-	//move(2.0, 2.0, 1);
+	move(2.0, 2.0, 1);
 	dibujar();
 }
 
@@ -78,7 +78,6 @@ void dibujar(){
 	a_speed = deg2rad(a_speed);
 	ang = 36;
 	ang = deg2rad(ang);
-	rotate(a_speed, deg2rad(72), 1);
 	move(2.0, 2.0, 1);
 	for(i = 0; i < 4; i++){
 		rotate(a_speed, ang, 0);
