@@ -1,0 +1,15 @@
+<launch>
+	<node
+		name = "turtlesim"
+		pkg = "turtlesim"
+		type = "turtlesim_node"
+		output = "screen"
+	/>
+	
+	<node
+		name = "estrella"
+		pkg = "estrella"
+		type = "hacer"
+		output = "screen"
+	/>
+</launch>
